@@ -8,3 +8,5 @@ https://dariaoskaossowska.github.io/goit-markup-hw-03/
 https://dariaoskaossowska.github.io/goit-markup-hw-04/
 # goit-markup-hw-05
 https://dariaoskaossowska.github.io/goit-markup-hw-05/
+# goit-markup-hw-06
+https://dariaoskaossowska.github.io/goit-markup-hw-06/
