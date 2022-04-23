@@ -388,10 +388,19 @@
                         </a></li>
                 </ul>
             </div>
+            <!-- Page footer - right side -->
+            <div class="footer-right-side">
+                <h3 class="third-header footer-third-header">zapisz się do newslettera</h3>
+                <form>
+                    <label for=""></label>
+                    <input type="text" name="email" placeholder="E-mail">
+                    <button type="submit">zapisz się</button>
+                </form>
+            </div>
         </div>
     </footer>
 
-    <!-- OKNO MODALNE -->
+    <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-btn-close" data-modal-close>
@@ -399,6 +408,12 @@
                     <use href="./images/svg/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <form class="modal-form" action="#" method="post">
+                <input class="modal-form-policy visually-hiden" id="user-policy" type="checkbox" name="policy">
+                <label for="user-policy" class="modal-form-policy-text">
+                    Oświadczam, iż akceptuję <a href="#regulamin">Regulamin</a> i <a href="#policy">Politykę
+                        Prywatności</a>.
+            </form>
         </div>
     </div>
     <!-- Skrypt Java Script - Otwieranie/zamykanie okna modalnego -->

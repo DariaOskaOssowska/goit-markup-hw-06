@@ -447,8 +447,7 @@ img {
   fill: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  transition: border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-    fill 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), fill 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list-link:hover,
@@ -517,7 +516,7 @@ img {
 
 /* ========  END FOOTER ========= */
 
-/* =========  BACKDROP ========== */
+/* =========  MODAL WINDOW ========== */
 
 .backdrop {
   position: fixed;
@@ -546,8 +545,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
   opacity: 1;
 }
@@ -574,7 +572,41 @@ img {
   top: 8px;
   right: 8px;
 }
-/* =======  END BACKDROP ======== */
+
+.modal-form-policy-text {
+  display: flex;
+  justify-content: center;
+  margin: 20px 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--second-colorFont);
+}
+.modal-form-policy-text::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--main-colorFont);
+  border-radius: 2px;
+}
+
+.modal-form-policy:checked + .modal-form-policy-text::before {
+  /* color: var(--main-color); */
+  background-color: var(--main-color);
+  border: 0.2px solid var(--light-bgc);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.visually-hiden {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+/* =====  END MODAL WINDOW ====== */
 
 /* =========  PORTFOLIO ========= */
 .portfolio-view .container {
@@ -656,7 +688,7 @@ img {
   top: 0;
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(295px);
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover .overlay {
